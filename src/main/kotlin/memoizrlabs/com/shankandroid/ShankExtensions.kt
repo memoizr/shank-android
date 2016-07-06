@@ -10,11 +10,11 @@ import com.memoizrlabs.Scope
 import com.memoizrlabs.ScopedCache
 import com.memoizrlabs.Shank.with
 
-val View.withParentActivityScope: ScopedCache get() = with(parentActivityScope)
-val Fragment.withParentActivityScope: ScopedCache get() = with(getScope(activity))
+val View.withActivityScope: ScopedCache get() = with(parentActivityScope)
+val Fragment.withActivityScope: ScopedCache get() = with(getScope(activity))
 
-val View.parentActivityScope: Scope get() = getScope(context)
-val Fragment.parentActivityScope: Scope get() = getScope(context)
+val View.activityScope: Scope get() = getScope(context)
+val Fragment.activityScope: Scope get() = getScope(context)
 
 val Activity.withThisScope: ScopedCache get() = with(getScope(this))
 
