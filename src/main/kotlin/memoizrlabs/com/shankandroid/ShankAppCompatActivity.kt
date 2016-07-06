@@ -26,7 +26,7 @@ abstract class ShankAppCompatActivity : AppCompatActivity(), Scoped {
 
     override fun onDestroy() {
         super.onDestroy()
-        if (isFinishing) { scope.clearWithFinalAction { finalAction() } }
+        if (isFinishing) { scope.clearWithFinalAction { finalAction(it) } }
     }
 }
 
