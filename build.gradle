@@ -53,5 +53,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.github.memoizr:shank-kotlin:v1.3.2'
+    compile 'com.github.memoizr:shank-kotlin:v1.3.3'
 }
