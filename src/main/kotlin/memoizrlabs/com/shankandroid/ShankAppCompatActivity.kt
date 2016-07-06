@@ -10,7 +10,7 @@ abstract class ShankAppCompatActivity : AppCompatActivity(), Scoped {
     private val STATE_SCOPE_ID = "STATE_SCOPE_ID"
     private lateinit var scopeUUID: UUID
 
-    open protected val finalAction = {}
+    open protected val finalAction: (Any) -> Unit = {}
 
     override val scope by lazy { scope(scopeUUID) }
 
